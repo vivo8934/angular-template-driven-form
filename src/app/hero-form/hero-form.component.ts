@@ -1,5 +1,5 @@
 import { Hero } from './../hero';
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-hero-form',
@@ -15,8 +15,9 @@ model = new Hero(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
 submitted = false;
   
+onSubmit(){ this.submitted = true};
 
-  ngOnInit(): void {
-  }
-
+newHero(){
+  this.model = new Hero(42, '', '');
+}
 }

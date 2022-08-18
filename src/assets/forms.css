@@ -1,0 +1,7 @@
+.ng-valid[required], .ng-valid.required{
+    border-left: #42A948;
+}
+
+.ng-invalid{
+    border-left: #a94442;
+}
